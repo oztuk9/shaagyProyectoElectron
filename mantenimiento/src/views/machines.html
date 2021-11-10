@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+    <title>Mantenimiento Industrial</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body style="padding-right: 10px">
+    <div class="sidebar">
+      <a href="./index.html"><svg width="30" height="30" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#person" />
+        </svg></a>
+      <a href="#" class="selected"><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#tv" />
+        </svg></a>
+      <a  href="./mantenimient.html"><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#clipboard-check" />
+        </svg></a>
+        <a href="./orden.html"><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#calendar4-event" />
+        </svg></a>
+      <a href="./reports.html"><svg width="26.5" height="26.5" fill="currentColor">
+        <use href="../assets/bootstrap-icons.svg#file-earmark-ruled" />
+        </svg></a>
+      <a href="#"><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#gear" />
+        </svg></a>
+    </div>
+    <div class="content-page">
+      <!-- <h2 class="title-page">Maquinas</h2> -->
+      <div class="container-row">
+        <div class="card-user">
+          <form id="form-machine">
+            <div class="input-avatar">
+              <img class="avatar" id="image" src="./../assets/tv.svg" />
+              <input class="input-avatar" type="file" id="inputImage" style="display: none" accept="image/*" />
+            </div>
+          <p class="container-selector">
+              <label class="selector-placeholder" id="btn-area">Area</label>
+              <select class="selector-content" id="selector-area">
+              </select>
+          </p>
+          <p class="container-selector">
+            <label class="selector-placeholder" id="btn-sub">Sub</label>
+              <select class="selector-content" id="selector-sub">
+              </select>
+          </p>
+          <p><input class="input" id="name" type="text" placeholder="Nombre" /></p>
+          <p><input class="input" id="code" type="text" placeholder="Codigo" /></p>
+          <p><input class="input" id="model" type="text" placeholder="Modelo" /></p>
+          <p><input class="input" id="n_serie" type="text" placeholder="Numero de Serie" /></p>
+          <p><input class="input" id="brand" type="text" placeholder="Marca" /></p>
+          <p><textarea class="input container-textarea" id="description" placeholder="Descripción"></textarea></p>
+          <div class="container-row">
+            <button class="btn-success" type="submit" id="submit">
+              Agregar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div style="width: 100%">
+        <div class="card" style="margin-top: 10px; height: 88vh;">
+          <div style="background: white; padding: 10px; border-radius: 15px; display: flex; flex: 1; flex-direction: row; height: 40px; justify-content: space-between; align-items: center;">
+            <p style="color: gray; padding-left: 5px;">Registro</p> 
+            <div class="container-row">
+                <button class="btn-danger-outline" id="btn-delete">
+                  <svg class="delete-icon" width="15" height="15" fill="currentColor">
+                    <use href="../assets/bootstrap-icons.svg#trash" />
+                  </svg>Eliminar
+                </button>
+                <div style="flex-direction: row; padding: 5px; display: flex; align-items: center; border-radius: 50px; overflow: hidden;   letter-spacing: 0.6px;
+                box-shadow: 0 1px 4px 1px rgba(155, 152, 152, 0.15);">
+                  <div class="icon-search" style="padding-left: 10px; margin-right: 5px;">
+                    <svg class="search-icon" width="12.5" height="12.5" fill="currentColor">
+                      <use href="../assets/bootstrap-icons.svg#search" />
+                    </svg>
+                  </div>
+                  <input style="border: none; width: 135px; margin-right: 10px; outline: none; font-size: 14px; letter-spacing: 1px" type="search" id="search" placeholder="Buscar usuario" />
+                </div>
+              </div>
+          </div>
+        <table class="container-table" id="tableMachine">
+          <thead class="table-head">
+            <tr>
+              <th style="width: 30px">
+                <input type="checkbox" class="checkbox" id="checkall"/>
+              </th>
+              <th>NOMBRE</th>
+              <th>CODIGO</th>
+              <th>MODELO</th>
+              <th>N-SERIE</th>
+              <th>MARCA</th>
+              <th>AREA</th>
+              <th>SUBAREA</th>
+            </tr>
+          </thead>
+          <tbody style="height:81vh;" id="tbody"></tbody> 
+        </table>
+        </div>
+    </div>
+    <div class="modal" id="modal-area">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <strong><h2>Registro Area</h2></strong>
+        <div class="container-row" style="margin-top: 10px; margin-bottom: 25px">
+          <input class="input" id="txt-area" type="text" placeholder="Nombre" />
+          <button class="btn-success" style="width: 100px; margin-left: 10px;" type="submit" id="submit-area">
+              Agregar
+          </button>
+        </div>
+        <div style="width: 100%">
+        <div class="input container-row" style="background: white; padding: 10px; border-radius: 15px; display: flex; flex: 1; flex-direction: row; height: 40px; justify-content: space-between; align-items: center;">
+          <p style="color: gray; padding-left: 5px;">Registro</p> 
+          <div class="container-row">
+              <button class="btn-danger-outline" id="btn-delete-area">
+                <svg class="delete-icon" width="15" height="15" fill="currentColor">
+                  <use href="../assets/bootstrap-icons.svg#trash" />
+                </svg>Eliminar
+              </button>
+              <div style="flex-direction: row; padding: 5px; display: flex; align-items: center; border-radius: 50px; overflow: hidden;   letter-spacing: 0.6px;
+              box-shadow: 0 1px 4px 1px rgba(155, 152, 152, 0.15);">
+                <div class="icon-search" style="padding-left: 10px; margin-right: 5px;">
+                  <svg class="search-icon" width="12.5" height="12.5" fill="currentColor">
+                    <use href="../assets/bootstrap-icons.svg#search" />
+                  </svg>
+                </div>
+                <input style="border: none; width: 135px; margin-right: 10px; outline: none; font-size: 14px; letter-spacing: 1px" type="search" id="search-area" placeholder="Buscar" />
+              </div>
+            </div>
+        </div>
+        <div class="card" style="margin-top: 10px; height: 30vh;">
+        <table class="container-table" id="table-area">
+          <thead class="table-head">
+            <tr>
+              <th style="width: 0px">
+                <input type="checkbox" class="checkbox" id="checkall-area"/>
+              </th>
+              <th>NOMBRE</th>
+            </tr>
+          </thead>
+          <tbody style="height: 25vh; overflow:auto;" id="tbody-area"></tbody> 
+        </table>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="modal" id="modal-sub">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <strong><h2>Registro Subarea</h2></strong>
+          <div class="container-row" style="margin-top: 10px; margin-bottom: 25px">
+              <label class="selector-placeholder shadow" id="btn-area">Area</label>
+              <select class="selector-card" id="selector-inSubarea">
+              </select>
+     
+            <input class="input" id="txt-sub" type="text" placeholder="Nombre" />
+            <button class="btn-success" style="width: 100px; margin-left: 10px;" type="submit" id="submit-sub">
+                Agregar
+            </button>
+          </div>
+          <div style="width: 100%">
+          <div class="input container-row" style="background: white; padding: 10px; border-radius: 15px; display: flex; flex: 1; flex-direction: row; height: 40px; justify-content: space-between; align-items: center;">
+            <p style="color: gray; padding-left: 5px;">Registro</p> 
+            <div class="container-row">
+                <button class="btn-danger-outline" id="btn-delete-sub">
+                  <svg class="delete-icon" width="15" height="15" fill="currentColor">
+                    <use href="../assets/bootstrap-icons.svg#trash" />
+                  </svg>Eliminar
+                </button>
+                <div style="flex-direction: row; padding: 5px; display: flex; align-items: center; border-radius: 50px; overflow: hidden;   letter-spacing: 0.6px;
+                box-shadow: 0 1px 4px 1px rgba(155, 152, 152, 0.15);">
+                  <div class="icon-search" style="padding-left: 10px; margin-right: 5px;">
+                    <svg class="search-icon" width="12.5" height="12.5" fill="currentColor">
+                      <use href="../assets/bootstrap-icons.svg#search" />
+                    </svg>
+                  </div>
+                  <input style="border: none; width: 135px; margin-right: 10px; outline: none; font-size: 14px; letter-spacing: 1px" type="search" id="search-sub" placeholder="Buscar" />
+                </div>
+              </div>
+          </div>
+          <div class="card" style="margin-top: 10px; height: 30vh;">
+          <table class="container-table" id="table-sub">
+            <thead class="table-head">
+              <tr>
+                <th style="width: 0px">
+                  <input type="checkbox" class="checkbox" id="checkall-sub"/>
+                </th>
+                <th>NOMBRE</th>
+              </tr>
+            </thead>
+            <tbody style="height: 25vh; overflow:auto;" id="tbody-sub"></tbody> 
+          </table>
+          </div>
+    </div>
+  </body>
+  <script src="../js/machines.js"></script>
+</html>

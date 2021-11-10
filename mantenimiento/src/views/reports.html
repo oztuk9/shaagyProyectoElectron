@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+    <title>Mantenimiento Industrial</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body style="padding-right: 10px">
+    <div class="sidebar">
+      <a href="./index.html"
+        ><svg width="30" height="30" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#person" /></svg
+      ></a>
+      <a href="./machines.html"
+        ><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#tv" /></svg
+      ></a>
+      <a href="./mantenimient.html"
+        ><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#clipboard-check" /></svg
+      ></a>
+      <a href="./orden.html"
+        ><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#calendar4-event" /></svg
+      ></a>
+      <a href="#" class="selected"
+        ><svg width="26.5" height="26.5" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#file-earmark-ruled" /></svg
+      ></a>
+      <a href="#"
+        ><svg width="25" height="25" fill="currentColor">
+          <use href="../assets/bootstrap-icons.svg#gear" /></svg
+      ></a>
+    </div>
+    <div class="content-page">
+      <!-- <h2 class="title-page">Personal</h2> -->
+      <div class="container-row" style="margin-top: 20px; margin-bottom: 15px">
+        <div class="container-selector" style="width: 250px">
+          <label class="selector-placeholder">Maquina</label>
+          <select class="selector-content" id="selectorMachine">
+            <option></option>
+          </select>
+        </div>
+        <div>
+          <label style="font-size: 13px; margin-left: 20px"
+            >Fecha inicio:
+          </label>
+          <input
+            class="input"
+            style="width: 160px; height: 18px"
+            id="dateStart"
+            type="date"
+            disabled
+          />
+        </div>
+        <div class="container-selector" style="margin-left: 20px">
+          <label class="selector-placeholder" style="width: auto"
+            >Frecuencia</label
+          >
+          <select class="selector-content" id="selectorFrecuencia" disabled>
+            <option></option>
+            <option>Semanal</option>
+            <option>Trimestral</option>
+            <option>Semestral</option>
+            <option>Anual</option>
+          </select>
+        </div>
+      </div>
+
+      <div
+        class="card container-row"
+        style="margin-top: 10px; height: fit-content"
+      >
+        <div style="background-color: #f8fafd">
+          <table style="width: 110px">
+            <thead class="table-head">
+              <tr>
+                <th>AÑO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 13px">Enero</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Febrero</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Marzo</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Abril</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Mayo</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Junio</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Julio</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Agosto</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Septiembre</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Octubre</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Noviembre</td>
+              </tr>
+              <tr>
+                <td style="padding: 13px">Diciembre</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="overflow-x: auto; white-space: nowrap">
+          <table class="container-table" id="tableHistory">
+            <thead class="table-head">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+                <th>19</th>
+                <th>20</th>
+                <th>21</th>
+                <th>22</th>
+                <th>23</th>
+                <th>24</th>
+                <th>25</th>
+                <th>26</th>
+                <th>27</th>
+                <th>28</th>
+                <th>29</th>
+                <th>30</th>
+                <th>31</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyHistory" style="overflow: hidden"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/reports.js"></script>
+</html>

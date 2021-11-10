@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100px" height="98px" viewBox="0 0 100 98" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#36DEDF" />
+      <stop offset="0.244" stop-color="#32C8DC" />
+      <stop offset="0.4963152" stop-color="#2EB3D9" />
+      <stop offset="0.8019409" stop-color="#3480DE" />
+      <stop offset="1" stop-color="#3480DE" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="0" x2="0.49999994" y2="0.99999976" id="gradient_2">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0" stop-color="#39EEE1" />
+      <stop offset="0.36731035" stop-color="#4B95CE" />
+      <stop offset="0.6926207" stop-color="#3566C9" />
+      <stop offset="1" stop-color="#3452E3" />
+    </linearGradient>
+  </defs>
+  <g id="Group-5">
+    <path d="M0 49C0 21.938 22.3858 0 50 0C77.6142 0 100 21.938 100 49C100 76.062 77.6142 98 50 98C22.3858 98 0 76.062 0 49Z" id="Ellipse-2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <path d="M0 43C0 19.2518 18.804 0 42 0C65.196 0 84 19.2518 84 43C84 66.7482 65.196 86 42 86C18.804 86 0 66.7482 0 43Z" transform="translate(8 6)" id="Ellipse-3" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    <path d="M48.4375 4.95323C34.4873 -10.5982 0.971614 14.5006 0.0493967 24.9697C-0.87282 35.4389 11.3347 22.1184 18.545 35.3372C25.7551 48.5558 19.8054 62.5048 25.8665 63.357C31.9276 64.2092 62.3876 20.5046 48.4375 4.95323Z" transform="translate(21.940002 20)" id="New-shape-3" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

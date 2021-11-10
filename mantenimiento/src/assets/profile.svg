@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="0.49999997" y1="0" x2="0.4999999" y2="0.99999994" id="gradient_1">
+      <stop offset="0" stop-color="#7CF6EC" />
+      <stop offset="0.5" stop-color="#87C2F3" />
+      <stop offset="1" stop-color="#999EEB" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_2">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#E3E3EB" />
+    </linearGradient>
+    <linearGradient x1="0.49999982" y1="0" x2="0.4999996" y2="1" id="gradient_3">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#DFDFE8" />
+    </linearGradient>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="3" />
+      <feGaussianBlur stdDeviation="3" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14509805 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+  </defs>
+  <g id="Group-7">
+    <path d="M0 50C0 22.3858 22.3858 0 50 0C77.6142 0 100 22.3858 100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50Z" id="Ellipse-3" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <g id="Group" transform="translate(23.500092 16)">
+      <path d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" transform="translate(11 0)" id="Ellipse-2" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+      <path d="M0 20.6277C0 9.23536 10.9321 0 25.7215 0C40.5108 0 52.5 9.23535 52.5 20.6277C52.5 32.0201 37.5948 37 25.7215 37C13.8481 37 0 32.0201 0 20.6277Z" transform="translate(0 35)" id="Ellipse-4" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+    </g>
+  </g>
+</svg>
